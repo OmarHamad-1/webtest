@@ -1,0 +1,20 @@
+:root{--bg:#f7f8fb;--card:#ffffff;--accent:#3b82f6;--muted:#6b7280}
+*{box-sizing:border-box}
+body{font-family:Inter,Segoe UI,Roboto,system-ui,Arial,sans-serif;background:var(--bg);color:#111;margin:0;line-height:1.4}
+.container{max-width:900px;margin:0 auto;padding:1rem}
+.site-header{background:var(--card);border-bottom:1px solid #e6e9ef}
+.site-header .container{display:flex;align-items:center;justify-content:space-between}
+nav a{margin-left:1rem;color:var(--accent);text-decoration:none}
+#hero{padding:2rem 0}
+#hero h2{margin-top:0}
+button{background:var(--accent);color:#fff;border:0;padding:.5rem .75rem;border-radius:6px;cursor:pointer}
+section{background:var(--card);padding:1rem;margin:1rem 0;border-radius:8px;box-shadow:0 1px 2px rgba(16,24,40,.04)}
+label{display:block;margin:.5rem 0}
+input,textarea{width:100%;padding:.5rem;margin-top:.25rem;border:1px solid #e6e9ef;border-radius:6px}
+.muted{color:var(--muted)}
+.site-footer{padding:1rem 0;text-align:center;color:var(--muted)}
+
+@media(min-width:700px){
+  #hero{display:flex;gap:2rem;align-items:center}
+  #hero p{flex:1}
+}

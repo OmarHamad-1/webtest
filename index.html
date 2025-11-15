@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sample Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>My Sample Website</h1>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="hero">
+      <h2>Welcome!</h2>
+      <p id="greeting">A small static site created for you.</p>
+      <button id="timeBtn">Show current time</button>
+      <p id="time"></p>
+    </section>
+
+    <section id="about">
+      <h3>About</h3>
+      <p>This site is a simple demo scaffold created by your assistant. It includes minimal styles and a tiny Node static server for local testing.</p>
+    </section>
+
+    <section id="contact">
+      <h3>Contact</h3>
+      <form id="contactForm">
+        <label>Name<input name="name" type="text" placeholder="Your name"></label>
+        <label>Email<input name="email" type="email" placeholder="you@example.com"></label>
+        <label>Message<textarea name="message" rows="4"></textarea></label>
+        <button type="submit">Send (demo)</button>
+      </form>
+      <p id="formMsg" class="muted"></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">Made with ♥ — Open the folder in your browser.</div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
